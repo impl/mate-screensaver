@@ -1,5 +1,5 @@
-mate-screensaver (1.7.0-1) UNRELEASED; urgency=low
+mate-screensaver (1.6.1-1) UNRELEASED; urgency=low
 
-  * New upstream release.
+  * Initial release. (Closes: #734664)
 
  -- stefano <stefano@debian>  Sun, 03 Nov 2013 21:08:31 +0100
