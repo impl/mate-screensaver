@@ -26,6 +26,7 @@ Build-Depends: debhelper (>= 9),
                x11proto-xf86vidmode-dev,
                libxxf86vm-dev,
                libgl1-mesa-dev | libgl1-mesa-swx11-dev,
+               libsystemd-login-dev,
                libnotify-dev,
                mate-common,
 Standards-Version: 3.9.5
