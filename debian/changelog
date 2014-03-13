@@ -1,5 +1,5 @@
-mate-screensaver (1.8.0-1) UNRELEASED; urgency=low
+mate-screensaver (1.8.0-1) unstable; urgency=low
 
   * Initial release. (Closes: #734664)
 
- -- Mike Gabriel <sunweaver@debian.org>  Sun, 03 Nov 2013 21:08:31 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Mar 2014 18:28:21 +0100
