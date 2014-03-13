@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: mate-screensaver
 Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://pub.mate-dektop.org/releases/
+Source: http://git.mate-dektop.org/mate-screensaver/
 
 Files: savers/gs-theme-engine.c
        savers/gs-theme-engine.h
@@ -45,30 +45,15 @@ Files: savers/gs-theme-engine.c
        src/test-passwd.c
        src/test-watcher.c
        src/test-window.c
-Copyright: 2004, 2005, 2006, 2008 William Jon McCann <mccann@jhu.edu>
+Copyright: 2004-2008, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
- 
-Files: data/migrate-xscreensaver-config.sh
-       data/xscreensaver-config.xsl
-       doc/config.xsl
-       savers/gs-theme-engine-marshal.c
-       savers/gs-theme-engine-marshal.h
-       src/debug-screensaver.sh
-       src/gs-marshal.c
-       src/gs-marshal.h
-Copyright: *No copyright*
-License: UNKNOWN
-Specified files lack copyright/license information in the
-(non-present) file header.
 
 Files: src/gs-auth-helper.c
        src/setuid.c
        src/setuid.h
        src/subprocs.h
-Copyright: 1991, 2003, 2004, 2008 Jamie Zawinski <jwz@jwz.org>
-License: UNKNOWN
-Specified files lack copyright/license information in the
-(non-present) file header.
+Copyright: 1991-2008, Jamie Zawinski <jwz@jwz.org>
+License: MIT~OldStyle
 
 Files: savers/floaters.c
        savers/gs-theme-window.c
@@ -78,19 +63,12 @@ License: LGPL-2+
 
 Files: savers/xdg-user-dir-lookup.c
        savers/xdg-user-dir-lookup.h
-Copyright: 2007, Red Hat, inc
-License: Expat
- The software is provided "as is", without warranty of any kind,
-express or implied, including but not limited to the warranties
-of merchantability, fitness for a particular purpose and noninfringenment,
-in no event shall the authors or copyright holders be liable for any claim,
-damages or other liability, whether in an action of contract, tort or
-otherwise, arising from, out of or in connection with the software or
-the use or other dealings in the software.
+Copyright: 2007, Red Hat, Inc.
+License: MIT~OldStyle
 
 Files: src/gs-auth-pwent.c
        src/gs-visual-gl.c
-Copyright: 1993, 1998, 1999, 2000, 2003 Jamie Zawinski <jwz@jwz.org>
+Copyright: 1993-2003 Jamie Zawinski <jwz@jwz.org>
            2006, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
@@ -101,12 +79,8 @@ License: GPL-2+
 
 Files: src/gs-fade.c
        src/gs-watcher-x11.c
-Copyright: 2004,2006, 2009 William Jon McCann <mccann@jhu.edu>
-           2008, 2009 Red Hat, Inc
-License: GPL-2+
-
-Files: ltmain.sh
-Copyright: 1996-2001, 2003-2006
+Copyright: 2004-2009 William Jon McCann <mccann@jhu.edu>
+           2008-2009 Red Hat, Inc.
 License: GPL-2+
 
 Files: src/gs-auth-pam.c
@@ -119,56 +93,132 @@ License: GPL-2+
 Files: src/subprocs.c
 Copyright: 1991-2003, Jamie Zawinski <jwz@jwz.org>
            2004, William Jon McCann <mccann@jhu.edu>
-License: UNKNOWN
-Specified files lack copyright/license information in the
-(non-present) file header.
+License: MIT~OldStyle
+
+Files: data/mate-screensaver-command.1
+       data/mate-screensaver-preferences.1
+       data/mate-screensaver.1
+Copyright: *No copyright*
+License: GPL-2+
+
+Files: po/*.po
+Copyright: THE PACKAGE'S COPYRIGHT HOLDER, 2005
+           2005-2007, Rosetta Contributors and Canonical Ltd.
+           2004-2009, Free Software Foundation, Inc.
+           2005, Miloslav Trma<mitr@volny.cz>.
+           2006, Lukas Novotny <lukasnov@cvs.gnome.org>.
+           2005, William Jon McCann <mccann@jhu.edu>
+           2005-2006, Adam Weinberger and the GNOME Foundation
+           2006-2008, The GNOME Project.
+           2006, Sharif FarsiWeb, Inc.
+           2006, Ubuntu Georgian Translators
+License: GPL-2+ or LGPL-2+
+Comment:
+ Assuming license as either found in COPYING file or
+ in COPYING.LIB file.
+
+Files: data/Makefile.am
+       data/xscreensaver-config.xsl
+       data/*.ui
+       data/mate-screensaver
+       data/*.desktop.in 
+       data/*.directory.in
+       data/*.pc.in
+       data/*.menu.in
+       data/*.service.in
+       data/*.sh
+       data/org.mate.*
+       data/images/Makefile.am
+       data/images/*.svg
+       data/images/cosmos/*
+       doc/*
+       po/LINGUAS
+       po/POTFILES.*
+       savers/Makefile.am
+       savers/*.desktop.in.in
+       savers/gs-theme-engine-marshal.c
+       savers/gs-theme-engine-marshal.h
+       src/Makefile.am
+       src/*.desktop.in.in
+       src/debug-screensaver.sh
+       src/gs-marshal.c
+       src/gs-marshal.h
+       Makefile.am
+       autogen.sh
+       configure.ac
+Copyright: *No copyright*
+License: GPL-2+ or LGPL-2+
+Comment:
+ Assuming license as either found in COPYING file or
+ in COPYING.LIB file.
 
 Files: debian/*
-Copyright: 2011 Stefano Karapetsas <stefano@karapetsas.com>
-           2013 Mike Gabriel <sunweaver@debian.org>
-License: GPL-2+
+Copyright: 2011-2014 Stefano Karapetsas <stefano@karapetsas.com>
+           2014 Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+ or LGPL-2+ or Expat or MIT~OldStyle
 
 License: GPL-2+
- 
-This package is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your opinion) any later version.
-.
-This package is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU Genaral Public License for more details.
-.
-You should have received a copy og the GNU General Public License
-along with this program. If not, see <http://www.gnu.org/licenses/>
-.
-On Debian systems, the complete text of the GNU General
-Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
 License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
 
-  The licenses for most software are designed to take away your
-freedom to share and change it. By contrast, the GNU General Public
-Licenses are intended to guarantee your freedom to share and change
-free software--to make sure the software is free for all its users.
+License: MIT~OldStyle
+ Permission to use, copy, modify, distribute, and sell this software and its
+ documentation for any purpose is hereby granted without fee, provided that
+ the above copyright notice appear in all copies and that both that
+ copyright notice and this permission notice appear in supporting
+ documentation.  No representations are made about the suitability of this
+ software for any purpose.  It is provided "as is" without express or
+ implied warranty.
 
-  This license, the Library General Public License, applies to some
-specially designated Free Software Foundation software, and to any
-other libraries whose authors decide to use it. You can use it for
-your libraries, too.
-
-  When we speak of free software, we are referring to freedom, not
-price. Our General Public Licenses are designed to make sure that you
-have the freedom to distribute copies of free software (and charge for
-this service if you wish), that you receive source code or can get it
-if you want it, that you can change the software or use pieces of it
-in new free programs; and that you know you can do these things.
-
-  To protect your rights, we need to make restrictions that forbid
-anyone to deny you these rights or to ask you to surrender the rights.
-These restrictions translate to certain responsibilities for you if
-you distribute copies of the library, or if you modify it.
-.
-On Debian systems, the complete text of the GNU General
-Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
+License: Expat
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation files
+ (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge,
+ publish, distribute, sublicense, and/or sell copies of the Software,
+ and to permit persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
