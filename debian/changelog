@@ -1,3 +1,18 @@
+mate-screensaver (1.8.0-2) unstable; urgency=low
+
+  * debian/rules:
+    + Enable parallel builds.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+  * debian/control:
+    + Improve LONG_DESCRIPTION of the dbg:package.
+  * debian/mate-screensaver-common.install:
+    + Drop mate-conf .convert files from package.
+  * debian/watch:
+    + No need to do Debian version mangling.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 02 May 2014 12:08:56 +0200
+
 mate-screensaver (1.8.0-1) unstable; urgency=low
 
   * Initial release. (Closes: #734664)
