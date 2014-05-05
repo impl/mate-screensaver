@@ -1,3 +1,11 @@
+mate-screensaver (1.8.0-3) unstable; urgency=low
+
+  * debian/control:
+    + Add Breaks: field to mate-screensaver. The package breaks
+      mate-screensaver-common (<< 1.8.0-1).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 16:29:20 +0200
+
 mate-screensaver (1.8.0-2) unstable; urgency=low
 
   * debian/rules:
