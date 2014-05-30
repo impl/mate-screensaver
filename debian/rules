@@ -1,6 +1,11 @@
 #!/usr/bin/make -f
 
 DHFLAGS=--parallel
+ifeq ($(DEB_HOST_ARCH_OS),linux)
+        SYSTEMD_SUPPORT=--with-systemd
+else
+        SYSTEMD_SUPPORT=--without-systemd
+endif
 
 %:
 	dh $@ $(DHFLAGS)
@@ -18,17 +23,17 @@ override_dh_auto_configure:
 	# upstream tarball is without configure. autogen.sh will create it
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
-		--disable-silent-rules \
-		--disable-static \
-		--with-xscreensaverdir=/usr/share/xscreensaver/config \
-		--with-xscreensaverhackdir=/usr/lib/xscreensaver \
-		--with-mit-ext \
-		--libexecdir=/usr/lib/ \
-		--with-console-kit \
-		--with-libnotify \
-		--without-systemd \
-		--enable-locking \
-		--with-gtk=2.0
+	        --disable-silent-rules \
+	        --disable-static \
+	        --with-xscreensaverdir=/usr/share/xscreensaver/config \
+	        --with-xscreensaverhackdir=/usr/lib/xscreensaver \
+	        --with-mit-ext \
+	        --libexecdir=/usr/lib/ \
+	        --with-console-kit \
+	        --with-libnotify \
+	        --enable-locking \
+	        --with-gtk=2.0 \
+	        $(SYSTEMD_SUPPORT)
 
 override_dh_strip:
 	dh_strip --dbg-package=mate-screensaver-dbg
