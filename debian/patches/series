@@ -1,1 +1,2 @@
 1001_add-keywords-to-desktop-files.patch
+1002_fix-segfault-if-xrandr-is-unavailable.patch

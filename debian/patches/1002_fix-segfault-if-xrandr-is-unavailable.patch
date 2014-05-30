@@ -1,0 +1,15 @@
+Description: Fix SegFault if XRANDR is not installed/available
+Author: Steven Chamberlain <steven@pyro.eu.org>
+Forwarded: https://github.com/mate-desktop/mate-screensaver/issues/46
+--- mate-screensaver-1.8.0/src/gs-fade.c.orig	2014-03-01 11:24:28.000000000 +0000
++++ mate-screensaver-1.8.0/src/gs-fade.c	2014-05-28 19:10:03.560688363 +0100
+@@ -916,7 +916,8 @@
+ 	gs_fade_set_alpha (fade, fade->priv->current_alpha);
+ 
+ 	for (i = 0; i < fade->priv->num_screens; i++)
+-		fade->priv->screen_priv[i].fade_finish (fade, i);
++		if (fade->priv->screen_priv[i].fade_type != FADE_TYPE_NONE)
++			fade->priv->screen_priv[i].fade_finish (fade, i);
+ }
+ 
+ static void
