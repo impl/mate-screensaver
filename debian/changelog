@@ -1,3 +1,21 @@
+mate-screensaver (1.8.0-4) unstable; urgency=low
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Limit B-D (libsystemd-login-dev) to [linux-any]. (Closes: #749502).
+  * debian/rules:
+    + Enable systemd support for builds on Linux.
+    + Drop upstream's non-Debian PAM configuration file after build.
+  * debian/patches:
+    + Add 1002_fix-segfault-if-xrandr-is-unavailable.patch. Fix SegFaults if
+      XRANDR is not available. (Closes: #749629).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 30 May 2014 15:23:46 +0200
+
 mate-screensaver (1.8.0-3) unstable; urgency=low
 
   * debian/control:
