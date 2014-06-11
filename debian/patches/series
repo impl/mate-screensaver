@@ -1,2 +1,3 @@
 1001_add-keywords-to-desktop-files.patch
 1002_fix-segfault-if-xrandr-is-unavailable.patch
+1003_proper-locale-datetime.patch

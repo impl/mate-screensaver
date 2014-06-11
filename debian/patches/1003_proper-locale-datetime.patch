@@ -1,0 +1,23 @@
+Author: Brian M. Carlson (https://github.com/bk2204)
+Description: Use locale representation of datetime objects
+Forwarded: https://github.com/mate-desktop/mate-screensaver/pull/47
+Abstract:
+ Instead of burdening i18n team members with figuring out
+ the correct datetime format for the different locales,
+ we directly get the datetime format directly via strftime()
+ and the underlying libc/locale implementation.
+--- a/src/gs-lock-plug.c
++++ b/src/gs-lock-plug.c
+@@ -300,10 +300,8 @@
+ 	gchar *str;
+ 
+ 	datetime = g_date_time_new_now_local ();
+-	/* Translators: Time format, see https://developer.gnome.org/glib/stable/glib-GDateTime.html#g-date-time-format */
+-	time = g_date_time_format (datetime, _("%l:%M %p"));
+-	/* Translators: Date format, see https://developer.gnome.org/glib/stable/glib-GDateTime.html#g-date-time-format */
+-	date = g_date_time_format (datetime, _("%A, %B %e"));
++	time = g_date_time_format (datetime, "%X");
++	date = g_date_time_format (datetime, "%x");
+ 
+ 	str = g_strdup_printf ("<span size=\"xx-large\" weight=\"ultrabold\">%s</span>", time);
+ 	gtk_label_set_text (GTK_LABEL (plug->priv->auth_time_label), str);
