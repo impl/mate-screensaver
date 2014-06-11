@@ -1,3 +1,11 @@
+mate-screensaver (1.8.0-5) unstable; urgency=low
+
+  * debian/patches:
+    + Add 1003_proper-locale-datetime.patch. Use locale system to obtain
+      correct date and time format for screensaver clock. (Closes: #746019).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 11 Jun 2014 22:24:50 +0200
+
 mate-screensaver (1.8.0-4) unstable; urgency=low
 
   [ Vangelis Mouhtsis ]
