@@ -102,6 +102,8 @@ Copyright: *No copyright*
 License: GPL-2+
 
 Files: po/*.po
+       po/ChangeLog
+       po/gnome-copyrights.txt
 Copyright: THE PACKAGE'S COPYRIGHT HOLDER, 2005
            2005-2007, Rosetta Contributors and Canonical Ltd.
            2004-2009, Free Software Foundation, Inc.
@@ -117,7 +119,8 @@ Comment:
  Assuming license as either found in COPYING file or
  in COPYING.LIB file.
 
-Files: data/Makefile.am
+Files: .tx/config
+       data/Makefile.am
        data/xscreensaver-config.xsl
        data/*.ui
        data/mate-screensaver
@@ -136,14 +139,18 @@ Files: data/Makefile.am
        po/POTFILES.*
        savers/Makefile.am
        savers/*.desktop.in.in
-       savers/gs-theme-engine-marshal.c
-       savers/gs-theme-engine-marshal.h
+       savers/gs-theme-engine-marshal.list
        src/Makefile.am
        src/*.desktop.in.in
        src/debug-screensaver.sh
-       src/gs-marshal.c
-       src/gs-marshal.h
+       src/gs-marshal.list
+       AUTHORS
+       COPYING
+       COPYING.LIB
+       ChangeLog
        Makefile.am
+       NEWS
+       README
        autogen.sh
        configure.ac
 Copyright: *No copyright*
