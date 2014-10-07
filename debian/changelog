@@ -1,3 +1,18 @@
+mate-screensaver (1.8.1-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+
+  [ Mike Gabriel ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 1002_fix-segfault-if-xrandr-is-unavailable.patch. Applied upstream.
+  * debian/copyright:
+    + Really mention all source files.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 07 Oct 2014 00:08:47 +0200
+
 mate-screensaver (1.8.0-5) unstable; urgency=low
 
   * debian/patches:
