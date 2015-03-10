@@ -1,3 +1,10 @@
+mate-screensaver (1.8.1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Add to D (mate-screensaver): mate-desktop-common. (Closes: #780210).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Mar 2015 18:26:50 +0100
+
 mate-screensaver (1.8.1-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
