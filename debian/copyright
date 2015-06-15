@@ -124,7 +124,7 @@ Files: .tx/config
        data/xscreensaver-config.xsl
        data/*.ui
        data/mate-screensaver
-       data/*.desktop.in 
+       data/*.desktop.in
        data/*.directory.in
        data/*.pc.in
        data/*.menu.in
