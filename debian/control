@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 9),
                libglib2.0-dev,
                libgtk2.0-dev,
                libmate-menu-dev,
-               libmate-desktop-dev,
+               libmate-desktop-dev (>= 1.9.4),
                libstartup-notification0-dev,
                libmatekbd-dev,
                libxt-dev,
@@ -78,5 +78,5 @@ Description: MATE screen saver and locker (debugging symbols)
  .
  This package contains debugging symbols for MATE screensaver.
  .
- The debugging symbols are installed  in /usr/lib/debug and will
+ The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
