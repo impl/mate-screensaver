@@ -1,10 +1,17 @@
-mate-screensaver (1.10.1-1) UNRELEASED; urgency=medium
+mate-screensaver (1.10.1-1~exp1) experimental; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
   * debian/patches:
     + Drop 1003_proper-locale-datetime.patch. Applied upstream.
+  * debian/{control,copyright,*.install}:
+    + Processed with wrap-and-sort
 
- -- Martin Wimpress <code@flexion.org>  Sat, 13 June 2015 06:13:50 +0100
+  [ Mike Gabriel ]
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.10).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 17 Jun 2015 12:24:54 +0200
 
 mate-screensaver (1.8.1-2) unstable; urgency=medium
 
