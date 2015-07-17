@@ -1,3 +1,16 @@
+mate-screensaver (1.10.2-1~exp1) experimental; urgency=medium
+
+  [ Mike Gabriel ]
+  * New upstream release.
+    - Fix segfault due to wrong object being destroyed. (Closes: #791377).
+
+  [ Michael Biebl ]
+  * debian/patches:
+    + Prepare for libsystemd-login-dev -> libsystemd-dev transition in Debian
+      stretch. (Closes: #779781).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 14:50:40 +0200
+
 mate-screensaver (1.10.1-1~exp1) experimental; urgency=medium
 
   [ Martin Wimpress ]
