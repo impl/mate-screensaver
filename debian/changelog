@@ -1,3 +1,10 @@
+mate-screensaver (1.10.2-1~exp2) UNRELEASD; urgency=medium
+
+  * debian/control:
+    + Update mate-power-manager Breaks and Replaces.
+
+ -- Martin Wimpress <code@flexion.org.org>  Thu, 30 Jul 2015 00:30:19 +0100
+
 mate-screensaver (1.10.2-1~exp1) experimental; urgency=medium
 
   [ Mike Gabriel ]
