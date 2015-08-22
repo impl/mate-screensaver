@@ -1,9 +1,14 @@
-mate-screensaver (1.10.2-1~exp2) UNRELEASD; urgency=medium
+mate-screensaver (1.10.2-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * debian/control:
-    + Update mate-power-manager Breaks and Replaces.
+    + Update mate-screensaver's Breaks: and Replaces:.
 
- -- Martin Wimpress <code@flexion.org.org>  Thu, 30 Jul 2015 00:30:19 +0100
+  [ Mike Gabriel ]
+  * Upload to unstable. This fixes a transitional FTBFS issue because of
+    mate-desktop in unstable being too new. (Closes: #796452).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 23 Aug 2015 00:02:52 +0200
 
 mate-screensaver (1.10.2-1~exp1) experimental; urgency=medium
 
