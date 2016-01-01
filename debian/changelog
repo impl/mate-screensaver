@@ -1,8 +1,14 @@
-mate-screensaver (1.12.0-1) UNRELEASED; urgency=medium
+mate-screensaver (1.12.0-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.12) and
+      libmate-desktop-dev (>= 1.12).
+  * debian/patches:
+    + Drop 1004_libsystemd.patch. Applied upstream.
 
- -- Martin Wimpress <code@flexion.org>  Mon, 09 Nov 2015 20:19:50 +0000
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 01 Jan 2016 15:32:14 +0100
 
 mate-screensaver (1.10.2-1) unstable; urgency=medium
 
