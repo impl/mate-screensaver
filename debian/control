@@ -31,7 +31,7 @@ Build-Depends: debhelper (>= 9),
                x11proto-xext-dev,
                x11proto-xf86vidmode-dev,
                xmlto,
-Standards-Version: 3.9.6
+Standards-Version: 3.9.7
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: https://anonscm.debian.org/git/pkg-mate/mate-screensaver.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-mate/mate-screensaver.git
