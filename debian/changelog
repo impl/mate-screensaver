@@ -1,17 +1,25 @@
-mate-screensaver (1.16.0-1) UNRELEASED; urgency=medium
+mate-screensaver (1.16.0-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
+    - Fix locking of screens in multi-monitor setups. (Closes: #826636).
+
+  [ Vangelis Mouhtsis ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.0-0ubuntu1 upload.
   * debian/control:
     + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
 
- -- Martin Wimpress <code@flexion.org>  Fri, 23 Sep 2016 10:46:47 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 02 Oct 2016 23:15:45 +0200
 
 mate-screensaver (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
     + Dependencies updated for MATE 1.15.
-  *debian/watch:
+  * debian/watch:
     + Update version matching to support development releases.
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:47 +0100
